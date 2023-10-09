@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<website>
+<editor>
+	<button id="save" enabled="true"/>
+	<button id="cancel" enabled="true"/>
+	<button id="bold" enabled="true"/>
+	<button id="italic" enabled="true"/>
+	<button id="underline" enabled="true"/>
+	<button id="copy" enabled="true"/>
+	<button id="cut" enabled="true"/>
+	<button id="paste" enabled="true"/>
+	<button id="pasteword" enabled="true"/>
+	<button id="left" enabled="true"/>
+	<button id="center" enabled="true"/>
+	<button id="right" enabled="true"/>
+	<button id="link" enabled="true"/>
+	<button id="anchor" enabled="true"/>
+	<button id="media" enabled="true"/>
+	<button id="unlink" enabled="true"/>
+	<button id="abbr" enabled="false"/>
+	<button id="ul" enabled="true"/>
+	<button id="color" enabled="false"/>
+	<button id="image" enabled="true"/>
+	<button id="style" enabled="true">
+	<!--	<extraclass name="Blue font" value="bluefont"/>-->
+	</button>
+	<button id="table" enabled="true"/>
+	<button id="tablerow" enabled="true"/>
+	<button id="togglemode" enabled="true"/>
+	<button id="toggleborder" enabled="true"/>
+</editor>
+</website>

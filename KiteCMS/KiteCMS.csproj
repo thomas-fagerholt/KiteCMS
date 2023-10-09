@@ -1,0 +1,1115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C2232877-E469-460E-9178-74DC5E6F3809}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>KiteCMS</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KiteCMS</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeCarvings.Piczard, Version=1.1.3.0, Culture=neutral, PublicKeyToken=88d00d4422733d60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CodeCarvings.Piczard.dll</HintPath>
+    </Reference>
+    <Reference Include="SgmlReaderDll">
+      <Name>SgmlReaderDll</Name>
+      <HintPath>bin\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\classes\ZipStorer.cs" />
+    <Compile Include="admin\useradmin\changepassword.aspx.cs">
+      <DependentUpon>changepassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\access\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\access\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\box\addbox.aspx.cs">
+      <DependentUpon>addbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\box\addboxcategory.aspx.cs">
+      <DependentUpon>addboxcategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\box\attachbox.aspx.cs">
+      <DependentUpon>attachbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\box\editbox.aspx.cs">
+      <DependentUpon>editbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\box\editboxcategory.aspx.cs">
+      <DependentUpon>editboxcategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\classes\admin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\boxCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\boxCategoryCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\boxCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\CaptchaImage.cs" />
+    <Compile Include="admin\classes\TextField.cs" />
+    <Compile Include="admin\classes\Editor.cs" />
+    <Compile Include="admin\classes\ContentFunctions.cs" />
+    <Compile Include="admin\classes\page.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\pageCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\parameter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\parameterCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\template.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\user.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\classes\valueCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\content\editcontent.aspx.cs">
+      <DependentUpon>editcontent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\editor_ns.aspx.cs">
+      <DependentUpon>editor_ns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\IEeditor.ascx.cs">
+      <DependentUpon>IEeditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\content\NSeditor.ascx.cs">
+      <DependentUpon>NSeditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\core\box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\core\boxCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\core\page.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\core\template.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\core\user.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\core\website.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\draft\adddraft.aspx.cs">
+      <DependentUpon>adddraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\draft\deletedraft.aspx.cs">
+      <DependentUpon>deletedraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\draft\editdraft.aspx.cs">
+      <DependentUpon>editdraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\draft\promotedraft.aspx.cs">
+      <DependentUpon>promotedraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\draft\showdraft.aspx.cs">
+      <DependentUpon>showdraft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\editor\includes\chooseinternallink.aspx.cs">
+      <DependentUpon>chooseinternallink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\editor\includes\image_select.aspx.cs">
+      <DependentUpon>image_select.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\editor\includes\image_view.aspx.cs">
+      <DependentUpon>image_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\editor\includes\instable.aspx.cs">
+      <DependentUpon>instable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\editor\includes\media_select.aspx.cs">
+      <DependentUpon>media_select.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\editor\includes\media_view.aspx.cs">
+      <DependentUpon>media_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\menu\addmenu.aspx.cs">
+      <DependentUpon>addmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\menu\copymenu.aspx.cs">
+      <DependentUpon>copymenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\menu\deletemenu.aspx.cs">
+      <DependentUpon>deletemenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\menu\editmenu.aspx.cs">
+      <DependentUpon>editmenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\menu\movemenu.aspx.cs">
+      <DependentUpon>movemenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\modules\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\template\addtemplate.aspx.cs">
+      <DependentUpon>addtemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\template\editcssfile.aspx.cs">
+      <DependentUpon>editcssfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\template\editxslfile.aspx.cs">
+      <DependentUpon>editxslfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\template\deletetemplate.aspx.cs">
+      <DependentUpon>deletetemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\template\edittemplate.aspx.cs">
+      <DependentUpon>edittemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\updatexml.aspx.cs">
+      <DependentUpon>updatexml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upload\uploadandedit.aspx.cs">
+      <DependentUpon>uploadandedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upload\createfolder.aspx.cs">
+      <DependentUpon>createfolder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upload\deletefile.aspx.cs">
+      <DependentUpon>deletefile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upload\listfiles.aspx.cs">
+      <DependentUpon>listfiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upload\upload.aspx.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\useradmin\adduser.aspx.cs">
+      <DependentUpon>adduser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\useradmin\backup.aspx.cs">
+      <DependentUpon>backup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\useradmin\edit_adminshortcuts.aspx.cs">
+      <DependentUpon>edit_adminshortcuts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\useradmin\edituser.aspx.cs">
+      <DependentUpon>edituser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\StringWriterWithEncoding.cs" />
+    <Compile Include="classes\page.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="classes\template.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="functions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="modules\debate\debate.aspx.cs">
+      <DependentUpon>debate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\errorpages\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\gallery\images\getImage.aspx.cs">
+      <DependentUpon>getImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\gallery\images\thumbs\getImage.aspx.cs">
+      <DependentUpon>getImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\mailform\tipafriend.aspx.cs">
+      <DependentUpon>tipafriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\mailform\mailform.aspx.cs">
+      <DependentUpon>mailform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\printerfriendly\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\redirect\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="modules\utils\captchaimage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>captchaimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\utils\captchaimage.aspx.designer.cs">
+      <DependentUpon>captchaimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="modules\utils\watermark.aspx.cs">
+      <DependentUpon>watermark.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Content Include="admin\adminpages.css" />
+    <Content Include="admin\editor\includes\pastefromword.aspx" />
+    <Content Include="admin\modules\comments\list_delete_comment.xsl" />
+    <Content Include="admin\modules\comments\list_activate_comment.xsl" />
+    <Content Include="admin\modules\comments\form_edit_commentData.xsl" />
+    <Content Include="admin\modules\debate\form_add_category.xsl" />
+    <Content Include="admin\modules\debate\form_add_debate.xsl" />
+    <Content Include="admin\modules\debate\form_edit_category.xsl" />
+    <Content Include="admin\modules\debate\list_edit_category.xsl" />
+    <Content Include="admin\modules\extranet\form_add_user.xsl" />
+    <Content Include="admin\modules\extranet\list_edit_user.xsl" />
+    <Content Include="admin\modules\extranet\form_edit_user.xsl" />
+    <Content Include="admin\modules\extranet\list_user.xsl" />
+    <Content Include="admin\modules\gallery\form_edit_gallery_images.xsl" />
+    <Content Include="admin\modules\newsletter\form_edit_newsletter.xsl" />
+    <Content Include="admin\modules\rss\form_edit_rss.xsl" />
+    <Content Include="admin\useradmin\changepassword.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\access\logout.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\useradmin\backup.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\useradmin\form_backup.xsl" />
+    <Content Include="admin\useradmin\form_edit_shortcuts.xsl" />
+    <Content Include="admin\useradmin\edit_adminshortcuts.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\useradmin\form_changepassword.xsl" />
+    <Content Include="admin\access\form_login.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="admin\access\login.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\box\addbox.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\box\addboxcategory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\box\attachbox.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\box\editbox.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\box\editboxcategory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\box\form_add_box.xsl" />
+    <Content Include="admin\box\form_add_boxcategory.xsl" />
+    <Content Include="admin\box\form_delete_boxcategory.xsl" />
+    <Content Include="admin\box\form_edit_box.xsl" />
+    <Content Include="admin\box\form_edit_boxcategory.xsl" />
+    <Content Include="admin\box\list_attach_box.xsl" />
+    <Content Include="admin\box\list_edit_box.xsl" />
+    <Content Include="admin\box\list_edit_boxcategory.xsl" />
+    <Content Include="admin\content\editcontent.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\content\editor_ns.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\content\IEeditor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\content\NSeditor.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="admin\data\adminMenu.xsl" />
+    <Content Include="admin\data\editmenu_parameters.xsl" />
+    <Content Include="admin\data\EditorNoSave.xml" />
+    <Content Include="admin\data\FullEditor.xml" />
+    <Content Include="admin\data\Iload.xml" />
+    <Content Include="admin\data\languageTexts.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="admin\data\userDefinedTables.xml" />
+    <Content Include="admin\default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\default.css" />
+    <Content Include="admin\draft\adddraft.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\draft\deletedraft.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\draft\editdraft.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\draft\form_add_draft.xsl" />
+    <Content Include="admin\draft\promotedraft.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\draft\showdraft.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\editor\Images\absmode.GIF" />
+    <Content Include="admin\editor\Images\abspos.GIF" />
+    <Content Include="admin\editor\Images\AddItem.GIF" />
+    <Content Include="admin\editor\Images\anchor.gif" />
+    <Content Include="admin\editor\Images\bgcolor.GIF" />
+    <Content Include="admin\editor\Images\Bold.GIF" />
+    <Content Include="admin\editor\Images\borders.GIF" />
+    <Content Include="admin\editor\Images\Break.GIF" />
+    <Content Include="admin\editor\Images\bullist.GIF" />
+    <Content Include="admin\editor\Images\Center.GIF" />
+    <Content Include="admin\editor\Images\chooseLink.bmp" />
+    <Content Include="admin\editor\Images\chooseLink.GIF" />
+    <Content Include="admin\editor\Images\Copy.GIF" />
+    <Content Include="admin\editor\Images\Cut.GIF" />
+    <Content Include="admin\editor\Images\DeIndent.GIF" />
+    <Content Include="admin\editor\Images\delcell.GIF" />
+    <Content Include="admin\editor\Images\delcol.GIF" />
+    <Content Include="admin\editor\Images\delete.GIF" />
+    <Content Include="admin\editor\Images\delrow.GIF" />
+    <Content Include="admin\editor\Images\details.GIF" />
+    <Content Include="admin\editor\Images\End.GIF" />
+    <Content Include="admin\editor\Images\fgcolor.GIF" />
+    <Content Include="admin\editor\Images\Find.GIF" />
+    <Content Include="admin\editor\Images\fullscrn.GIF" />
+    <Content Include="admin\editor\Images\ikon_file_grafik.gif" />
+    <Content Include="admin\editor\Images\ikon_file_tom.gif" />
+    <Content Include="admin\editor\Images\ikon_folder.gif" />
+    <Content Include="admin\editor\Images\ikon_folder_up.gif" />
+    <Content Include="admin\editor\Images\image.GIF" />
+    <Content Include="admin\editor\Images\inindent.GIF" />
+    <Content Include="admin\editor\Images\inscell.GIF" />
+    <Content Include="admin\editor\Images\inscol.GIF" />
+    <Content Include="admin\editor\Images\insrow.GIF" />
+    <Content Include="admin\editor\Images\instable.GIF" />
+    <Content Include="admin\editor\Images\Italic.GIF" />
+    <Content Include="admin\editor\Images\left.GIF" />
+    <Content Include="admin\editor\Images\Link.GIF" />
+    <Content Include="admin\editor\Images\Lock.GIF" />
+    <Content Include="admin\editor\Images\media.gif" />
+    <Content Include="admin\editor\Images\mrgcell.GIF" />
+    <Content Include="admin\editor\Images\newdoc.GIF" />
+    <Content Include="admin\editor\Images\Newproj.GIF" />
+    <Content Include="admin\editor\Images\nosave.gif" />
+    <Content Include="admin\editor\Images\numlist.GIF" />
+    <Content Include="admin\editor\Images\Open.GIF" />
+    <Content Include="admin\editor\Images\Paste.GIF" />
+    <Content Include="admin\editor\Images\pasteWord.gif" />
+    <Content Include="admin\editor\Images\preview.gif" />
+    <Content Include="admin\editor\Images\print.GIF" />
+    <Content Include="admin\editor\Images\project.GIF" />
+    <Content Include="admin\editor\Images\props.GIF" />
+    <Content Include="admin\editor\Images\reddot.gif" />
+    <Content Include="admin\editor\Images\Redo.GIF" />
+    <Content Include="admin\editor\Images\right.GIF" />
+    <Content Include="admin\editor\Images\Save.GIF" />
+    <Content Include="admin\editor\Images\SaveAll.GIF" />
+    <Content Include="admin\editor\Images\SaveAs.GIF" />
+    <Content Include="admin\editor\Images\snapgrid.GIF" />
+    <Content Include="admin\editor\Images\spltcell.GIF" />
+    <Content Include="admin\editor\Images\Start.GIF" />
+    <Content Include="admin\editor\Images\TaskList.GIF" />
+    <Content Include="admin\editor\Images\under.GIF" />
+    <Content Include="admin\editor\Images\Undo.GIF" />
+    <Content Include="admin\editor\Images\unlink.gif" />
+    <Content Include="admin\editor\Images\unsave.gif" />
+    <Content Include="admin\editor\includes\anchor.aspx" />
+    <Content Include="admin\editor\includes\chooseinternallink.aspx" />
+    <Content Include="admin\editor\includes\abbr.aspx" />
+    <Content Include="admin\editor\includes\imagePopup.html" />
+    <Content Include="admin\editor\includes\functions.js" />
+    <Content Include="admin\editor\includes\image.html" />
+    <Content Include="admin\editor\includes\image_select.aspx" />
+    <Content Include="admin\editor\includes\image_view.aspx" />
+    <Content Include="admin\editor\includes\instable.aspx" />
+    <Content Include="admin\editor\includes\media.html" />
+    <Content Include="admin\editor\includes\media_select.aspx" />
+    <Content Include="admin\editor\includes\media_view.aspx" />
+    <Content Include="admin\editor\includes\selcolor.aspx" />
+    <Content Include="admin\editor\includes\sellink.aspx" />
+    <Content Include="admin\editor\includes\toolbars.css" />
+    <Content Include="admin\images\bar_bg.gif" />
+    <Content Include="admin\images\down.GIF" />
+    <Content Include="admin\images\fgcolor.GIF" />
+    <Content Include="admin\images\flag_dk.gif" />
+    <Content Include="admin\images\flag_usa.gif" />
+    <Content Include="admin\images\icon_pic.gif" />
+    <Content Include="admin\images\logo.gif" />
+    <Content Include="admin\images\logo_long.gif" />
+    <Content Include="admin\images\pic_back.gif" />
+    <Content Include="admin\images\prop_divider.gif" />
+    <Content Include="admin\images\space.gif" />
+    <Content Include="admin\images\up.GIF" />
+    <Content Include="admin\includes\modules.xsl" />
+    <Content Include="admin\menu\addmenu.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\menu\add_info.xsl" />
+    <Content Include="admin\menu\admin_url.xsl" />
+    <Content Include="admin\menu\choose_location.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="admin\menu\edit_menu_choose_content.xsl" />
+    <Content Include="admin\menu\copymenu.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\menu\copy_menu.xsl" />
+    <Content Include="admin\menu\deletemenu.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\menu\editmenu.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\menu\edit_menu.xsl" />
+    <Content Include="admin\menu\movemenu.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\menu\move_menu.xsl" />
+    <Content Include="admin\menu\public_url.xsl" />
+    <Content Include="admin\modules\address\add_address.xsl" />
+    <Content Include="admin\modules\address\do_list_address.xsl" />
+    <Content Include="admin\modules\address\export_address.xsl" />
+    <Content Include="admin\modules\address\form_edit_address.xsl" />
+    <Content Include="admin\modules\address\list_address.xsl" />
+    <Content Include="admin\modules\address\list_edit_address.xsl" />
+    <Content Include="admin\modules\booking\form_add_booking.xsl" />
+    <Content Include="admin\modules\booking\form_add_group.xsl" />
+    <Content Include="admin\modules\booking\form_add_repeat_booking.xsl" />
+    <Content Include="admin\modules\booking\form_add_ressource.xsl" />
+    <Content Include="admin\modules\booking\form_edit_booking.xsl" />
+    <Content Include="admin\modules\booking\form_list_ressource.xsl" />
+    <Content Include="admin\modules\booking\form_show_booking.xsl" />
+    <Content Include="admin\modules\calendar\add_calendar.xsl" />
+    <Content Include="admin\modules\calendar\do_list_calendar.xsl" />
+    <Content Include="admin\modules\calendar\form_edit_calendar.xsl" />
+    <Content Include="admin\modules\calendar\list_calendar.xsl" />
+    <Content Include="admin\modules\calendar\list_edit_calendar.xsl" />
+    <Content Include="admin\modules\debate\activate_debate.xsl" />
+    <Content Include="admin\modules\debate\form_activate_debate.xsl" />
+    <Content Include="admin\modules\debate\form_edit_debate.xsl" />
+    <Content Include="admin\modules\debate\list_debate.xsl" />
+    <Content Include="admin\modules\default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\modules\gallery\form_edit_gallery.xsl" />
+    <Content Include="admin\modules\newsletter\form_add_archive.xsl" />
+    <Content Include="admin\modules\newsletter\form_add_category.xsl" />
+    <Content Include="admin\modules\newsletter\form_edit_archive.xsl" />
+    <Content Include="admin\modules\newsletter\form_edit_category.xsl" />
+    <Content Include="admin\modules\newsletter\form_edit_subscriber.xsl" />
+    <Content Include="admin\modules\newsletter\form_send_newsletter.xsl" />
+    <Content Include="admin\modules\newsletter\list_edit_archive.xsl" />
+    <Content Include="admin\modules\newsletter\list_edit_newsletter.xsl" />
+    <Content Include="admin\modules\newsletter\list_edit_subscriber.xsl" />
+    <Content Include="admin\modules\newsletter\list_send_newsletter.xsl" />
+    <Content Include="admin\modules\shop\form_add_category.xsl" />
+    <Content Include="admin\modules\shop\form_add_shopitem.xsl" />
+    <Content Include="admin\modules\shop\form_edit_category.xsl" />
+    <Content Include="admin\modules\shop\form_edit_shopitem.xsl" />
+    <Content Include="admin\modules\shop\list_edit_category.xsl" />
+    <Content Include="admin\modules\shop\list_edit_shopitem.xsl" />
+    <Content Include="admin\template\addtemplate.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\template\form_edit_cssfile.xsl" />
+    <Content Include="admin\template\list_edit_cssfile.xsl" />
+    <Content Include="admin\template\editcssfile.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\template\form_edit_xslfile.xsl" />
+    <Content Include="admin\template\editxslfile.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\template\deletetemplate.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\template\delete_template.xsl" />
+    <Content Include="admin\template\edittemplate.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\template\edit_template.xsl" />
+    <Content Include="admin\template\form_delete_template.xsl" />
+    <Content Include="admin\template\form_edit_template.xsl" />
+    <Content Include="admin\template\list_edit_xslfile.xsl" />
+    <Content Include="admin\updatexml.aspx" />
+    <Content Include="admin\upload\form_uploadandedit.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="admin\upload\uploadandedit.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\upload\createfolder.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\upload\deletefile.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\upload\form_createfolder.xsl" />
+    <Content Include="admin\upload\form_deletefile.xsl" />
+    <Content Include="admin\upload\form_upload.xsl" />
+    <Content Include="admin\upload\listfiles.aspx" />
+    <Content Include="admin\upload\upload.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\useradmin\adduser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\useradmin\edituser.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="admin\useradmin\form_add_user.xsl" />
+    <Content Include="admin\useradmin\form_edit_user.xsl" />
+    <Content Include="admin\useradmin\form_user_pages.xsl" />
+    <Content Include="admin\useradmin\list_edit_user.xsl" />
+    <Content Include="data\Comments.xml" />
+    <Content Include="data\debate.xml" />
+    <Content Include="data\empty.xsl" />
+    <Content Include="data\extranet.xml" />
+    <Content Include="data\gallery.xml" />
+    <Content Include="data\newsletter.xml" />
+    <Content Include="data\printerfriendly.xsl" />
+    <Content Include="data\redirect.xsl" />
+    <Content Include="data\shop.xml" />
+    <Content Include="data\website.xml" />
+    <Content Include="data\website.xsl" />
+    <Content Include="default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="images\default.css" />
+    <Content Include="images\space.gif" />
+    <Content Include="modules\address\add_address.xsl" />
+    <Content Include="modules\address\do_list_address.xsl" />
+    <Content Include="modules\address\form_edit_address.xsl" />
+    <Content Include="modules\address\list_address.xsl" />
+    <Content Include="modules\booking\form_show_booking.xsl" />
+    <Content Include="modules\booking\images\tri.gif" />
+    <Content Include="modules\booking\images\trileft.gif" />
+    <Content Include="modules\calendar\show_calendar.xsl" />
+    <Content Include="modules\comments\comments.xsl" />
+    <Content Include="modules\debate\debate.aspx" />
+    <Content Include="modules\debate\form_add_debate.xsl" />
+    <Content Include="modules\debate\images\email.gif" />
+    <Content Include="modules\debate\images\minus.gif" />
+    <Content Include="modules\debate\images\plus.gif" />
+    <Content Include="modules\debate\images\tom.gif" />
+    <Content Include="modules\debate\show_debate_tree.xsl" />
+    <Content Include="modules\default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="modules\errorpages\404.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="modules\gallery\css\closelabel.gif" />
+    <Content Include="modules\gallery\css\loading.gif" />
+    <Content Include="modules\gallery\css\nextlabel.gif" />
+    <Content Include="modules\gallery\css\prevlabel.gif" />
+    <Content Include="modules\gallery\css\slimbox2.css" />
+    <Content Include="modules\gallery\images\getImage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="modules\gallery\images\thumbs\getImage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="modules\gallery\js\slimbox2.js" />
+    <Content Include="modules\mailform\tipafriend.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="modules\mailform\mailform.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="modules\newsletter\list_newsletter.xsl" />
+    <Content Include="modules\printerfriendly\default.aspx" />
+    <Content Include="modules\printerfriendly\printerfriendly.xsl" />
+    <Content Include="modules\redirect\default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="modules\search\form_search.xsl" />
+    <Content Include="modules\search\search_result.xsl" />
+    <Content Include="modules\shop\checkout.xsl" />
+    <Content Include="modules\shop\default.aspx" />
+    <Content Include="modules\shop\do_order.xsl" />
+    <Content Include="modules\shop\email_confirm.xsl" />
+    <Content Include="modules\shop\error.xsl" />
+    <Content Include="modules\shop\form_accept.xsl" />
+    <Content Include="modules\shop\form_checkout.xsl" />
+    <Content Include="modules\shop\form_payment.xsl" />
+    <Content Include="modules\shop\form_savecustomer.xsl" />
+    <Content Include="modules\shop\list_basket.xsl" />
+    <Content Include="modules\shop\list_category.xsl" />
+    <Content Include="modules\shop\list_search.xsl" />
+    <Content Include="modules\utils\captchaimage.aspx" />
+    <Content Include="modules\utils\watermark.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="admin\useradmin\changepassword.aspx.resx">
+      <DependentUpon>changepassword.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\access\logout.aspx.resx">
+      <DependentUpon>logout.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\access\login.aspx.resx">
+      <DependentUpon>login.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\box\addbox.aspx.resx">
+      <DependentUpon>addbox.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\box\addboxcategory.aspx.resx">
+      <DependentUpon>addboxcategory.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\box\attachbox.aspx.resx">
+      <DependentUpon>attachbox.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\box\editbox.aspx.resx">
+      <DependentUpon>editbox.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\box\editboxcategory.aspx.resx">
+      <DependentUpon>editboxcategory.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\content\editcontent.aspx.resx">
+      <DependentUpon>editcontent.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\content\editor_ns.aspx.resx">
+      <DependentUpon>editor_ns.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\content\IEeditor.ascx.resx">
+      <DependentUpon>IEeditor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\content\NSeditor.ascx.resx">
+      <DependentUpon>NSeditor.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\draft\adddraft.aspx.resx">
+      <DependentUpon>adddraft.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\draft\deletedraft.aspx.resx">
+      <DependentUpon>deletedraft.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\draft\editdraft.aspx.resx">
+      <DependentUpon>editdraft.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\draft\promotedraft.aspx.resx">
+      <DependentUpon>promotedraft.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\draft\showdraft.aspx.resx">
+      <DependentUpon>showdraft.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\editor\includes\chooseinternallink.aspx.resx">
+      <DependentUpon>chooseinternallink.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\editor\includes\image_select.aspx.resx">
+      <DependentUpon>image_select.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\editor\includes\image_view.aspx.resx">
+      <DependentUpon>image_view.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\editor\includes\instable.aspx.resx">
+      <DependentUpon>instable.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\editor\includes\media_select.aspx.resx">
+      <DependentUpon>media_select.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\editor\includes\media_view.aspx.resx">
+      <DependentUpon>media_view.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\menu\addmenu.aspx.resx">
+      <DependentUpon>addmenu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\menu\copymenu.aspx.resx">
+      <DependentUpon>copymenu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\menu\deletemenu.aspx.resx">
+      <DependentUpon>deletemenu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\menu\editmenu.aspx.resx">
+      <DependentUpon>editmenu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\menu\movemenu.aspx.resx">
+      <DependentUpon>movemenu.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\modules\default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\template\addtemplate.aspx.resx">
+      <DependentUpon>addtemplate.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\template\editcssfile.aspx.resx">
+      <DependentUpon>editcssfile.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\template\editxslfile.aspx.resx">
+      <DependentUpon>editxslfile.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\template\deletetemplate.aspx.resx">
+      <DependentUpon>deletetemplate.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\template\edittemplate.aspx.resx">
+      <DependentUpon>edittemplate.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\updatexml.aspx.resx">
+      <DependentUpon>updatexml.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\upload\uploadandedit.aspx.resx">
+      <DependentUpon>uploadandedit.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\upload\createfolder.aspx.resx">
+      <DependentUpon>createfolder.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\upload\deletefile.aspx.resx">
+      <DependentUpon>deletefile.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\upload\listfiles.aspx.resx">
+      <DependentUpon>listfiles.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\upload\upload.aspx.resx">
+      <DependentUpon>upload.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\useradmin\adduser.aspx.resx">
+      <DependentUpon>adduser.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\useradmin\backup.aspx.resx">
+      <DependentUpon>backup.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\useradmin\edit_adminshortcuts.aspx.resx">
+      <DependentUpon>edit_adminshortcuts.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin\useradmin\edituser.aspx.resx">
+      <DependentUpon>edituser.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\debate\debate.aspx.resx">
+      <DependentUpon>debate.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\errorpages\404.aspx.resx">
+      <DependentUpon>404.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\gallery\images\getImage.aspx.resx">
+      <DependentUpon>getImage.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\gallery\images\thumbs\getImage.aspx.resx">
+      <DependentUpon>getImage.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\mailform\tipafriend.aspx.resx">
+      <DependentUpon>tipafriend.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\mailform\mailform.aspx.resx">
+      <DependentUpon>mailform.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\printerfriendly\default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\redirect\default.aspx.resx">
+      <DependentUpon>default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modules\utils\watermark.aspx.resx">
+      <DependentUpon>watermark.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="admin\data\access.webinfo" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50824</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

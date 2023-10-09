@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<website version="1.0.0">
+  <selectedpage>5</selectedpage>
+  <page id="1" zone="0" language="dk" updated="2022-09-28 12:00" created="2022-09-28 12:00">
+    <usetemplate>1</usetemplate>
+    <public>1</public>
+    <menutitle><![CDATA[Frontpage]]></menutitle>
+    <contentholders>
+      <html><![CDATA[<p><br />Welcome to the online demo for KiteCMS, a userfriendly and intuitive Content Management System build on XML / XSLT. <br /></p><p>You log in to the system from <a href="/admin">/admin</a> using the username "demo" and the password "demo" (without quotes). <br /></p><p>Please feel free to contact us with comments, suggestions and bugreports using the contactform on <a href="http://kitecms.com">kitecms.com</a>. On our homepage you can also find information on configurating and using the system.</p><p>We hope you will find our system useful and easy to use. Please inform us, that you use the system, so that your homepage can be added to the reference list.</p><p>It is free to use KiteCMS.</p>]]></html>
+    </contentholders>
+  </page>
+  <page id="3" zone="0" language="dk" created="2022-09-28 12:00" updated="2022-09-28 12:00">
+    <usetemplate>1</usetemplate>
+    <public>1</public>
+    <menutitle><![CDATA[Page]]></menutitle>
+    <page id="4" zone="0" language="dk" created="2022-09-28 12:00" updated="2022-09-28 12:00">
+      <usetemplate>1</usetemplate>
+      <public>1</public>
+      <menutitle><![CDATA[Subpage]]></menutitle>
+      <friendlyurl><![CDATA[/subpage]]></friendlyurl>
+    </page>
+    <contentholders>
+      <html><![CDATA[This website is how KiteCMS looks right out of the box. Download, unzip and GO.
+<br />But, It is easy to implement your own webdesign<br />]]></html>
+    </contentholders>
+    <page id="6" zone="0" language="dk" created="2023-10-09 10:09" updated="2023-10-09 10:09">
+      <usetemplate>2</usetemplate>
+      <public>1</public>
+      <menutitle><![CDATA[Gallery]]></menutitle>
+      <friendlyurl><![CDATA[/gallery]]></friendlyurl>
+    </page>
+    <page id="7" zone="0" language="dk" created="2023-10-09 10:53" updated="2023-10-09 10:53">
+      <usetemplate>3</usetemplate>
+      <public>1</public>
+      <menutitle><![CDATA[Page with comments]]></menutitle>
+      <friendlyurl><![CDATA[]]></friendlyurl>
+    </page>
+  </page>
+  <template id="1">
+    <title><![CDATA[default]]></title>
+    <publicurl><![CDATA[/default.aspx]]></publicurl>
+    <adminurl><![CDATA[/admin/default.aspx]]></adminurl>
+    <xslurl><![CDATA[website.xsl]]></xslurl>
+    <templatecolor><![CDATA[]]></templatecolor>
+    <moduleclasspublic><![CDATA[]]></moduleclasspublic>
+    <moduleclassadmin><![CDATA[]]></moduleclassadmin>
+  </template>
+  <page id="5" zone="0" language="dk" created="2022-09-28 12:00" updated="2023-10-09 11:18">
+    <usetemplate>1</usetemplate>
+    <public>1</public>
+    <menutitle><![CDATA[test]]></menutitle>
+  </page>
+  <template id="2">
+    <title><![CDATA[Gallery]]></title>
+    <templatecolor><![CDATA[#1900c3]]></templatecolor>
+    <publicurl><![CDATA[/default.aspx]]></publicurl>
+    <adminurl><![CDATA[/admin/modules/default.aspx]]></adminurl>
+    <xslurl><![CDATA[website.xsl]]></xslurl>
+    <moduleclasspublic><![CDATA[kitecms.modules.gallery@gallery.dll]]></moduleclasspublic>
+    <moduleclassadmin><![CDATA[kitecms.modules.gallery@gallery.dll]]></moduleclassadmin>
+    <usercontrol><![CDATA[]]></usercontrol>
+    <xslurl><![CDATA[\data\website.xsl]]></xslurl>
+  </template>
+  <template id="3">
+    <title><![CDATA[Comments]]></title>
+    <templatecolor><![CDATA[]]></templatecolor>
+    <publicurl><![CDATA[/default.aspx]]></publicurl>
+    <adminurl><![CDATA[/admin/default.aspx]]></adminurl>
+    <xslurl><![CDATA[website.xsl]]></xslurl>
+    <moduleclasspublic><![CDATA[kitecms.modules.comments@comments.dll]]></moduleclasspublic>
+    <moduleclassadmin><![CDATA[kitecms.modules.comments@comments.dll]]></moduleclassadmin>
+    <usercontrol><![CDATA[]]></usercontrol>
+    <xslurl><![CDATA[website.xsl]]></xslurl>
+  </template>
+</website>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<website>
+  <selectedpage>7</selectedpage>
+  <field type="text" id="author" label="Author" required="true" unique="false" listitem="true" />
+  <field type="text" id="header" label="Header" required="true" unique="false" />
+  <field type="largetext" id="comment" label="Comment" required="true" cols="16" rows="10" unique="false" />
+  <comments rootpageid="3" islive="1">
+    <adminemail><![CDATA[noreply@kitecms.com]]></adminemail>
+    <thankyoutext><![CDATA[Thank you for your comment]]></thankyoutext>
+  </comments>
+</website>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<website>
+  <selectedpage>6</selectedpage>
+  <gallery pageid="6">
+    <width>1000</width>
+    <height>1000</height>
+    <thumbwidth>100</thumbwidth>
+    <thumbheight>100</thumbheight>
+    <textinlist>false</textinlist>
+    <imagefolder><![CDATA[/images]]></imagefolder>
+  </gallery>
+</website>

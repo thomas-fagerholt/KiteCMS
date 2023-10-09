@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<iload>
+  <size id="size1" label="300 x 200"  fixed="true" width="300" height="200"/>
+  <size id="size2" label="100 x 100"  fixed="true" width="100" height="100"/>
+  <size id="size3" label="Fri størrelse"  fixed="false"/>
+</iload>

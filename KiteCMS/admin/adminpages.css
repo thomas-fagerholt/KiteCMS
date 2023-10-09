@@ -1,0 +1,9 @@
+body {
+	margin:0;
+	padding:0;
+	font-size:11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+td, p {font-size:11px;}
+
+#KiteCMSAdminBarInner {margin-bottom:20px;}

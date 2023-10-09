@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<website>
+  <selectedpage>0</selectedpage>
+  <access>
+    <module id="0" name="Alle niveauer">
+      <module id="1100" name="menu" submenu="page">
+        <method id="1101" name="addmenu" url="/admin/menu/addmenu.aspx?pageid={//selectedpage}#selectedpage" cache="all" />
+        <method id="1103" name="editmenu" url="/admin/menu/editmenu.aspx?pageid={//selectedpage}" />
+        <method id="1104" name="deletemenu" url="#" onclickalert="deletemenualert" cache="all" />
+        <method id="1102" name="movemenu" url="/admin/menu/movemenu.aspx?pageid={//selectedpage}" cache="all" />
+        <method id="1105" name="copymenu" url="/admin/menu/copymenu.aspx?pageid={//selectedpage}" />
+      </module>
+      <module id="1200" name="content">
+        <method id="1201" name="editcontent" url="?pageid={//selectedpage}&amp;action=editcontent" />
+      </module>
+      <module id="1300" name="draft" submenu="page">
+        <method id="1301" name="adddraft" url="/admin/draft/adddraft.aspx?pageid={//selectedpage}" />
+        <method id="1302" name="editdraft" url="?pageid={//selectedpage}&amp;action=editdraftcontent" />
+        <method id="1303" name="showdraft" url="javascript:void(0);" onclick="window.open('?pageid={//selectedpage}&amp;showdraft=1','newwindow');return false;" />
+        <method id="1304" name="promotedraft" url="#" onclickalert="promotedraftalert" />
+        <method id="1305" name="deletedraft" url="#" onclickalert="deletedraftalert" />
+      </module>
+      <module id="1400" name="template" submenu="site">
+        <method id="1401" name="addtemplate" url="/admin/template/addtemplate.aspx?pageid={//selectedpage}" />
+        <method id="1402" name="edittemplate" url="/admin/template/edittemplate.aspx?pageid={//selectedpage}" cache="all" />
+        <method id="1403" name="deletetemplate" url="/admin/template/deletetemplate.aspx?pageid={//selectedpage}" cache="all" />
+        <method id="1404" name="editxslfile" url="/admin/template/editxslfile.aspx?pageid={//selectedpage}" />
+        <method id="1405" name="editcssfile" url="/admin/template/editcssfile.aspx?pageid={//selectedpage}" />
+        <method id="1406" name="backup" url="/admin/useradmin/backup.aspx?pageid={//selectedpage}" />
+      </module>
+      <module id="1500" name="upload" submenu="site">
+        <method id="1501" name="uploadfile" url="/admin/upload/upload.aspx?pageid={//selectedpage}" />
+        <method id="1505" name="uploadandedit" url="/admin/upload/uploadandedit.aspx?pageid={//selectedpage}" />
+        <method id="1502" name="deletefile" url="/admin/upload/deletefile.aspx?pageid={//selectedpage}" />
+        <method id="1503" name="createfolder" url="/admin/upload/createfolder.aspx?pageid={//selectedpage}" />
+        <method id="1504" name="listfiles" url="/admin/upload/listfiles.aspx?pageid={//selectedpage}" />
+      </module>
+      <module id="1600" name="useradmin" submenu="site">
+        <method id="1601" name="adduser" url="/admin/useradmin/adduser.aspx?pageid={//selectedpage}" />
+        <method id="1602" name="edituser" url="/admin/useradmin/edituser.aspx?pageid={//selectedpage}" />
+        <method id="1603" name="adminshortcuts" url="/admin/useradmin/edit_adminshortcuts.aspx?pageid={//selectedpage}" />
+      </module>
+      <module id="1700" name="boxmodule" submenu="site">
+        <method id="1701" name="attachbox" url="/admin/box/attachbox.aspx?pageid={//selectedpage}" />
+        <method id="1702" name="addbox" url="/admin/box/addbox.aspx?pageid={//selectedpage}" />
+        <method id="1703" name="editbox" url="/admin/box/editbox.aspx?pageid={//selectedpage}" />
+        <method id="1704" name="addcategory" url="/admin/box/addboxcategory.aspx?pageid={//selectedpage}" />
+        <method id="1705" name="editcategory" url="/admin/box/editboxcategory.aspx?pageid={//selectedpage}" />
+      </module>
+      <module id="2100" name="newsletter" submenu="page">
+        <method id="2101" name="sendnewsletter" />
+        <method id="2102" name="editnewsletter" />
+        <method id="2103" name="editsubscriber" />
+        <method id="2104" name="addcategory" />
+        <method id="2105" name="editarchive" />
+      </module>
+      <module id="2200" name="extranet" submenu="page">
+        <method id="2201" name="adduser" />
+        <method id="2202" name="asignuser" />
+        <method id="2203" name="deleteuser" />
+        <method id="2204" name="activateextranet" />
+      </module>
+      <module id="2400" name="debate" submenu="page">
+        <method id="2401" name="deletedebate" />
+        <method id="2402" name="activedebate" />
+        <method id="2403" name="editdebate" />
+        <method id="2404" name="adddebatecategory" />
+      </module>
+      <module id="2800" name="search" submenu="page">
+        <method id="2801" name="createindex" />
+      </module>
+      <module id="2900" name="shop" submenu="page">
+        <method id="2902" name="addcategory" />
+        <method id="2903" name="editcategory" />
+        <method id="2904" name="addshopitem" />
+        <method id="2905" name="editshopitem" />
+        <method id="2901" name="importdata" />
+      </module>
+      <module id="3000" name="gallery" submenu="page">
+        <method id="3001" name="editgallery" url="/admin/modules/default.aspx?pageid={//selectedpage}" />
+        <method id="3002" name="galleryeditimages" />
+      </module>
+      <module id="3200" name="comments" submenu="page">
+        <method id="3201" name="addcomments" cache="none" />
+        <method id="3202" name="editcomments" cache="none" />
+        <method id="3203" name="activatecomment" cache="none" />
+        <method id="3204" name="deletecomment" cache="none" />
+      </module>
+    </module>
+  </access>
+  <user id="1" active="1" changepassword="0" failedlogins="0">
+    <username><![CDATA[admin]]></username>
+    <fullname><![CDATA[Adminstrator]]></fullname>
+    <password><![CDATA[ISMvKXpXpadDiUoOSoAfww==]]></password>
+    <access>0</access>
+    <menuid>0</menuid>
+    <cookiestring><![CDATA[FeFyrRM]ggNdhzmkvX`fgHklOzsWBRMwCNhJJWmFtUpoodBaiEpEyCa{vWjt\s\V]]></cookiestring>
+  </user>
+  <user id="5" active="1" changepassword="0" failedlogins="0">
+    <username><![CDATA[demo]]></username>
+    <fullname><![CDATA[demo user]]></fullname>
+    <password><![CDATA[/gHOKn+6yPr67XyYKgTiKQ==]]></password>
+    <access>0</access>
+    <menuid>0</menuid>
+    <cookiestring><![CDATA[iUmjT{Cby`oorDIIY[]RGQBd`[Fs^PLN]Kcr`C{zxWRSFjHreHJUWoaYTIKvvMEi]]></cookiestring>
+  </user>
+</website>

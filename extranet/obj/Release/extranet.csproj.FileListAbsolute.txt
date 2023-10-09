@@ -1,0 +1,9 @@
+C:\sites\profiledit\extranet\bin\Release\extranet.dll
+C:\sites\profiledit\extranet\bin\Release\KiteCMS.dll
+C:\sites\profiledit\extranet\bin\Release\SgmlReaderDll.dll
+C:\sites\profiledit\extranet\bin\Release\KiteCMS.pdb
+C:\sites\profiledit\extranet\bin\Release\KiteCMS.XmlSerializers.dll
+C:\sites\profiledit\extranet\obj\Release\ResolveAssemblyReference.cache
+C:\sites\profiledit\extranet\obj\Release\extranet.dll
+C:\sites\profiledit\extranet\bin\Release\CodeCarvings.Piczard.dll
+C:\sites\profiledit\extranet\bin\Release\CodeCarvings.Piczard.xml

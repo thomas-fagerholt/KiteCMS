@@ -1,0 +1,20 @@
+body,td,.brodtekst {  
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ text-decoration: none;
+ color: #000000;
+ }
+ 
+h3,.overskrift {  
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ text-decoration: none;
+ color: #333333;
+ font-weight: bold;
+ }
+ 
+
+
+a:link {color: #336633; text-decoration: none}
+a:visited {color: #336633; text-decoration: none}
+a:hover {  color: #336633; text-decoration: underline}

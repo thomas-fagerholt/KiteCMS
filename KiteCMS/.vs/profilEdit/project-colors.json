@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c2232877-e469-460e-9178-74dc5e6f3809": {
+      "ProjectGuid": "c2232877-e469-460e-9178-74dc5e6f3809",
+      "DisplayName": "KiteCMS",
+      "ColorIndex": 0
+    },
+    "7519817b-701a-40d7-8f27-ef4184fafa87": {
+      "ProjectGuid": "7519817b-701a-40d7-8f27-ef4184fafa87",
+      "DisplayName": "calendar",
+      "ColorIndex": 1
+    },
+    "f2b5a4fa-50aa-48ed-be4b-282f5f02b395": {
+      "ProjectGuid": "f2b5a4fa-50aa-48ed-be4b-282f5f02b395",
+      "DisplayName": "Comments",
+      "ColorIndex": 2
+    },
+    "88a3d226-0d25-4c4b-855f-807473f12a50": {
+      "ProjectGuid": "88a3d226-0d25-4c4b-855f-807473f12a50",
+      "DisplayName": "Gallery",
+      "ColorIndex": 3
+    },
+    "5f9a7685-aa07-4cc4-97c3-a8f48c1eb7d7": {
+      "ProjectGuid": "5f9a7685-aa07-4cc4-97c3-a8f48c1eb7d7",
+      "DisplayName": "Newsletter",
+      "ColorIndex": 4
+    },
+    "d445156b-aabb-4b37-80e7-5ff14dc1a985": {
+      "ProjectGuid": "d445156b-aabb-4b37-80e7-5ff14dc1a985",
+      "DisplayName": "Shop",
+      "ColorIndex": 5
+    },
+    "e9f8a2ca-8cc8-4ef4-9df2-feb5d5efb4ac": {
+      "ProjectGuid": "e9f8a2ca-8cc8-4ef4-9df2-feb5d5efb4ac",
+      "DisplayName": "Debate",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "c958c008-6e57-438b-829b-92adfbf5775a": {
+      "ProjectGuid": "c958c008-6e57-438b-829b-92adfbf5775a",
+      "DisplayName": "booking",
+      "ColorIndex": 7
+    },
+    "86c60cd7-b12e-4ee9-92c6-b10c36af8620": {
+      "ProjectGuid": "86c60cd7-b12e-4ee9-92c6-b10c36af8620",
+      "DisplayName": "Extranet",
+      "ColorIndex": 8
+    },
+    "dc3c3cbb-9d41-4ca8-85b1-f1079aa311f7": {
+      "ProjectGuid": "dc3c3cbb-9d41-4ca8-85b1-f1079aa311f7",
+      "DisplayName": "Rss",
+      "ColorIndex": 9
+    }
+  },
+  "NextColorIndex": 10
+}

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<LINK href="default.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body>
+
+<h2>extranet</h2>
+<p>Extranettet bruges til at begrænse besøgenes afgang til udvalgte offentlige sider.<br/>
+Man skal være oprettet som bruger og have adgang til det aktuelle område af hjemmesiden for at kunne se siderne.</p>
+
+
+<p><b>Implementering:</b><br/>
+<img src="images/extranetsider.gif" align="right"/>
+Extranettet implementeret ved at lave en log-på side med skabelon Extranet. De sider som ønskes beskyttet af den pågældende log-på side, placeres som undersider til denne. Alle sider som er placeret under log-på siden er beskyttet og kan først ses når man er logget på. Hvis man forsøger at ramme en beskyttet side direkte uden at være logget på, føres man til log-på siden.</p>
+<p>Der kan på samme hjemmeside godt være flere log-på sider, som beskytter hver sine sider. Hvis den bruger, som logger på, har adgang til flere områder, er man logget ind i disse samtidig. Når man er logget på vil de beskyttede sider fremgå i menuen, mens log-på siden er fjernet.</p>
+<p>Da extranettet er integreret i profilEdit CMS, har det ingen betydning hvilken skabelontype, som bruges til de beskyttede sider. Det er kun log-på siden, som skal være af typen Extranet.</p>
+
+<p><b>Offentlig del:</b><br/>
+Da man kan have forskellige ønsker til hvordan log-på siden skal se ud, er denne ikke færdiglavet, men man skal selv indsætte noget kode, som brugerne kan logge ind via. Nedestående er eksempel på brugbar kode, som skal sættes ind via htmlvisning i teksteditoren på administrationssiden. Feltnavnene skal være som nedenfor. xx erstattes af log-på sidens pageid eller pageid for en af de beskyttede sider</p>
+
+&lt;FORM action=default.aspx?pageid=xx method=post&gt;<br/>
+brugernavn: &lt;INPUT type="tekst" name="extranetUsername"/&gt;&lt;br/&gt;<br/>
+password: &lt;INPUT type="password" name="extranetpassword"/&gt;&lt;br/&gt;<br/>
+&lt;INPUT type="submit" value="log ind"/&gt;<br/>
+&lt;/FORM&gt;</br>
+
+<p><b>Administrativ del:</b><br/>
+Der oprettes en log-på side med skabelonen Extranet. Vær opmærksom på at extranettet skal aktiveres før at undersiderne er beskyttede. Skal oprettes mindst en underside, hvis indhold man ønsker at beskytte.
+Når man står på log-på siden er der i midter området et antal funktioner, som er tilknyttet ekstranetmodulet. Disse kan rettighedsmæssigt styres via brugeradministrationen, så administrative brugere kan tildeles rettigheder til de enkelte funktioner. Det er kun funktioner, man har rettighed til, som vil blive vist på siden.</p>
+
+<p>- opret bruger:<br/>
+Her kan der oprettes nye ekstranet brugere. Vær opmærksom på at dette ikke er brugere til administrationen af hjemmesiden. De er kun til at tildele særlige læserettigheder på de offentlige sider.</p>
+
+<p>- list/tilføj brugere:<br/>
+Denne funktion bruges til at give læserettigheder til de sider, som ligger under den pågældende log-på side. Øverst står de extranetbrugere, som kan se indholdet af alle undersider til den pågældende log-på side. Nederst står dem, som ikke har rettighed til siderne. Ud for hver extranetbruger er et link til at ændre denne brugers rettigheder.</p>
+
+<p>- editer/slet bruger:<br/>
+Her kan enkelte extranetbrugere slettes, eller deres data kan ændres. Bemærk at det ikke er muligt at ændre brugernavnet.</p>
+
+<p>- aktiver/deaktiver passwordbeskyttelse:<br/>
+Denne funktion bruges til at aktivere extranettet. Det kan også efterfølgende deaktiveres, hvis det ønskes. Det er nødvendigt at aktivere extranettet på nye log-på sider inden at de er funktionelle</p>
+
+<p><b>Opsætning af modul:</b><br/>
+<table>
+<tr><td>ASP-fil til offentlig side:</td><td>/modules/default.aspx</td></tr>
+<tr><td>ASP-fil til administrativ side:</td><td>/admin/modules/default.aspx</td></tr>
+<tr><td>Modul klasse og metode til offentlig del:</td><td>profilEdit.Modules.Extranet@extranet.dll</td></tr>
+<tr><td>Modul klasse og metode til administrativ del:</td><td>profilEdit.Modules.Extranet@extranet.dll</td></tr>
+
+<p><a href=index.html>tilbage til oversigten</a></p>
+</table>
+</p>
+</body>
+</HTML>

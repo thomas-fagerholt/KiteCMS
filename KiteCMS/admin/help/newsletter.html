@@ -1,0 +1,58 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<LINK href="default.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body>
+
+<h2>Nyhedsbrev</h2>
+<p>Nyhedsbrevsmodulet bruges til at sende nyhedsbreve til abonnenter. Modulet indeholder mulighed for automatisk til- og framelding samt arkivering af udsendte nyheder.</p>
+
+
+<p><b>Offentlig del:</b><br/>
+
+Da man kan have forskellige ønsker til hvordan abonneringsdelen skal se ud, er denne ikke færdiglavet, men man skal selv indsætte noget kode. Nedestående er eksempel på brugbar kode, som skal sættes ind via htmlvisning i teksteditoren på administrationssiden. Feltnavnene skal være som nedenfor. xx erstattes af nyhedssidens pageid og yy af id'et på en kategori. Man kan godt indsætte abonneringskoden på en anden side end nyhedssiden, f.eks. forsiden, men nedenstående kode skal peje på en nyhedsside</p>
+
+&lt;FORM action=/modules/default.aspx name=newsletter method=post&gt;<br/>
+&lt;input type=hidden name=pageid value=xx&gt;<br/>
+&lt;input type=hidden name=category value=yy&gt;<br/>
+&lt;input type=hidden name=action value=subscribe&gt;<br/>
+navn: &lt;INPUT type="text" name="name"/&gt;&lt;br/&gt;<br/>
+email: &lt;INPUT type="text" name="email"/&gt;&lt;br/&gt;<br/>
+&lt;input type=submit value="tilmeld" onclick="document.newsletter.action.value='subscribe'"&gt;<br/>
+&lt;input type=submit value="afmeld" onclick="document.newsletter.action.value='unsubscribe'"&gt;<br/>
+&lt;/FORM&gt;</br></br>
+
+Det er muligt via filen "/modules/newsletter/list_newsletter.xsl" at designe nyhedsarkivet.
+
+<p><b>Administrativ del:</b><br/>
+Der oprettes en side med modulet Nyhedsbrev. Når man står på siden er der i midterområdet et antal funktioner, som er tilknyttet modulet. Disse kan rettighedsmæssigt styres via brugeradministrationen, så administrative brugere kan tildeles rettigheder til de enkelte funktioner. Det er kun funktioner, man har rettighed til, som vil blive vist på siden.</p>
+
+<p>- udsend nyhedsbrev:<br/>
+Her kan der laves en automatisk udsending af et nyhedsbrev til alle abonnenterne. Da modulet understøtter forskellige nyhedskategorier, skal man starte med at vælge i hvilken kategori der skal udsendes. Der skal nu skrives tekst i 2 felter: subjekt og indhold. Subjekt er nyhedens titel, og er den tekst abonnenterne vil se i oversigten i deres postprogram. Indhold er selve nyheden. Hvis kategorien er sat til HTML-format, kan der skrives almindelige HTML-tags, som vil påvirke visningen. F.eks. &lt;b&gt;<b>fed skrift</b>&lt;/b&gt; og &lt;br&gt; linieskift.<br><br>
+Når nyheden sendes vil der blive sat en indledende og afsluttende tekst rundt om indholdet. Disse vises på siden og kan rettes under punktet nyhedsbrevs data i oversigten. Det anbefales at lave en testsending af nyheden inden den sendes til alle abonnenter. Dette gøres ved at trykke på "test" og skrive sin emailadresse. Når man har modtaget testmailen og er tilfreds med indholdet, trykkes der på udsend. Der sendes nu en mail direkte til hver abonnent. Dette kan tage lidt tid og man vil først se kvitteringssiden, når udsendingen er færdig. Man må <u>ikke</u> opdatere kvitteringssiden, da nyheden så vil blive sendt igen.<br><br>
+Man kan vælge at gemme nyheden i arkivet (hvis det er aktiveret for kategorien), og bruge det på den offentlige del til at have et nyhedsarkiv. Nyheden vil så ligge i arkivet umiddelbart efter udsending.</p>
+
+<p>- editer nyhedsbrevs data:<br/>
+Her kan editeres data for kategorier, som er faste fra udsending til udsending. Tilmeldings- og afmeldingsteksten skrives på siden til abonnenten. Der kan skrives HTML-kode til at fremhæve eller der kan laves en javasdript-popupbox.<br><br>
+Der kan også rettes i den indledende og afsluttende tekst til nyhedsbrevet. I den indledende tekst er det muligt at indflette abonnentens navn, hvis en sådan er skrevet ved tilmelding. Testlinien med indfletning skal omgives af &lt;#  #&gt;. Man skrive heri en tekst, f.eks. Kære navn. navn erstattes med det aktuelle navn, så der f.eks. kunne komme til at stå "Kære Peter". Hvis abonnenten ikke har opgivet et navn, udelades linien helt ved udsending.<br><br>
+Det er også muligt at angive om en nyhed skal sendes i HTML-format. Dette kan være ønskeligt for at kunne lave et "lækkert" nyhedsbrev, men det kan give visningsproblemer i visse postprogrammer.</p>
+
+<p>- editer abbonnenter:<br/>
+Her er det muligt at se hvor mange abonnenter der er i hver kategori, se de abonnenter, samt at slette enkelte abonnenter.</p>
+
+<p>- tilføj kategori:<br/>
+Nye kategorier oprettes her.</p>
+
+<p><b>Opsætning af modul:</b><br/>
+<table>
+<tr><td>ASP-fil til offentlig side:</td><td>/modules/default.aspx</td></tr>
+<tr><td>ASP-fil til administrativ side:</td><td>/admin/modules/default.aspx</td></tr>
+<tr><td>Modul klasse og metode til offentlig del:</td><td>profilEdit.Modules.Newsletter@newsletter.dll</td></tr>
+<tr><td>Modul klasse og metode til administrativ del:</td><td>profilEdit.Modules.Newsletter@newsletter.dll</td></tr>
+</table>
+</p>
+
+<p><a href=index.html>tilbage til oversigten</a></p>
+</body>
+</HTML>

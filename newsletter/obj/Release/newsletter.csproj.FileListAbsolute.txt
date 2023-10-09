@@ -1,0 +1,9 @@
+C:\sites\profiledit\newsletter\bin\Release\newsletter.dll
+C:\sites\profiledit\newsletter\bin\Release\KiteCMS.dll
+C:\sites\profiledit\newsletter\bin\Release\SgmlReaderDll.dll
+C:\sites\profiledit\newsletter\bin\Release\KiteCMS.pdb
+C:\sites\profiledit\newsletter\bin\Release\KiteCMS.XmlSerializers.dll
+C:\sites\profiledit\newsletter\obj\Release\ResolveAssemblyReference.cache
+C:\sites\profiledit\newsletter\obj\Release\newsletter.dll
+C:\sites\profiledit\newsletter\bin\Release\CodeCarvings.Piczard.dll
+C:\sites\profiledit\newsletter\bin\Release\CodeCarvings.Piczard.xml

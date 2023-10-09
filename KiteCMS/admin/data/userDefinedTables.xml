@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<website>
+	<table name="test">
+		<html><![CDATA[
+		<table border="1">
+		<tr>
+			<td width="200"></td>
+		</tr>
+		<tr>
+			<td width="200"></td>
+		</tr>
+		</table>
+		]]></html>
+	</table>
+	<table name="skema">
+		<html><![CDATA[
+<table cellpadding="1" cellspacing="1" border="0">
+<tr><td align="center" width="100" height="20" class="bookingHeader"></td>
+<td align="center" width="100" height="20" class="bookingHeader">mandag</td>
+<td align="center" width="100" height="20" class="bookingHeader">tirsdag</td>
+<td align="center" width="100" height="20" class="bookingHeader">onsdag</td>
+<td align="center" width="100" height="20" class="bookingHeader">torsdag</td>
+<td align="center" width="100" height="20" class="bookingHeader">fredag</td>
+</tr>
+<tr><td class="bookingHeader">1. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+<tr><td class="bookingHeader">2. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+<tr><td class="bookingHeader">3. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+<tr><td class="bookingHeader">4. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+<tr><td class="bookingHeader">5. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+<tr><td class="bookingHeader">6. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+<tr><td class="bookingHeader">7. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+<tr><td class="bookingHeader">8. lek</td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td><td class="bookingFree"></td></tr>
+</table>		]]></html>
+	</table>
+</website>
