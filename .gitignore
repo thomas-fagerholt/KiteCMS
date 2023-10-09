@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/KiteCMS/.vs/profilEdit/FileContentIndex
+/.vs
+/KiteCMS/.vs/profilEdit/v15
+/KiteCMS/.vs/profilEdit/v17
+/KiteCMS/_UpgradeReport_Files
