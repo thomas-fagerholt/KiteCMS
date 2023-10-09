@@ -1,0 +1,11 @@
+C:\sites\profiledit\Comments\bin\Release\Comments.dll
+C:\sites\profiledit\Comments\bin\Release\Comments.pdb
+C:\sites\profiledit\Comments\bin\Release\KiteCMS.dll
+C:\sites\profiledit\Comments\bin\Release\SgmlReaderDll.dll
+C:\sites\profiledit\Comments\bin\Release\KiteCMS.pdb
+C:\sites\profiledit\Comments\bin\Release\KiteCMS.XmlSerializers.dll
+C:\sites\profiledit\Comments\obj\Release\ResolveAssemblyReference.cache
+C:\sites\profiledit\Comments\obj\Release\Comments.dll
+C:\sites\profiledit\Comments\obj\Release\Comments.pdb
+C:\sites\profiledit\Comments\bin\Release\CodeCarvings.Piczard.dll
+C:\sites\profiledit\Comments\bin\Release\CodeCarvings.Piczard.xml

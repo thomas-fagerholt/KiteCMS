@@ -1,0 +1,30 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<LINK href="default.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body>
+<h2>Redirect</h2>
+<p>Redirekt skabelonen bruges til at indsætte sider i menustrukturen, som ikke er en del af profilEdit CMS. Dette kan enten være html-filer, som ligger på samme server, eller sider, som ligger på en anden server.</p>
+
+<p><b>Implementering:</b><br/>
+Det kan nogle gange være ønskeligt at kunne indsætte menupunkter, som pejer på andre sider, end dem man kan oprette via profilEdit CMS. Dette kunne være en flad HTML-side, som er uploaded til serveren eller til en helt anden hjemmeside. Det bør fremgå af menutitlen, hvis brugeren føres til en anden hjemmeside.
+</p>
+<p>Når man opretter en ny redirekt side, skal man definere, hvor brugeren skal sendes hen, når de trykker på menupunktet.</p>
+
+<p><b>Offentlig del:</b><br/>
+Der er ingen offentlig del til dette modul, da brugeren redirektes over til en anden siden.
+
+<p><b>Administrativ del:</b><br/>
+For at definere den side, som brugeren skal sendes til, skal feltet "Parametre" på opret/ret menupunkt bruges. Man skriver url==(dobbelt ligmed-tegn) efterfuldt af urlen. Denne skal starte med / for interne urler og http:// for eksterne urler. Der kunne f.eks. stå url==/images/htmlfiles/test.html eller url==http://www.profiledit.dk</p>
+
+<p><b>Opsætning af modul:</b><br/>
+<table>
+<tr><td>ASP-fil til offentlig side:</td><td>/modules/redirect/default.aspx</td></tr>
+<tr><td>ASP-fil til administrativ side:</td><td>/admin/default.aspx</td></tr>
+</table>
+</p>
+
+<p><a href=index.html>tilbage til oversigten</a></p>
+</body>
+</HTML>

@@ -1,0 +1,96 @@
+.visibleborders * td { 
+	border:1px dashed #C0C0C0;
+}
+
+.tbContentElement
+{
+    POSITION: ABSOLUTE;
+    HEIGHT: 1px; 
+    LEFT: 0px; 
+    TOP: 0px; 
+    WIDTH: 1px; 
+}
+.tbContent
+{
+	POSITION: ABSOLUTE;
+	BORDER-BOTTOM: black solid 1px; 
+	BORDER-LEFT: black solid 1px; 
+	BORDER-RIGHT: black solid 1px; 
+	BORDER-TOP:  black solid 1px; 
+	HEIGHT: 400px; 
+	TOP:130;
+	LEFT:150;
+	padding-right:20px;
+	overflow-Y: auto;
+	scrollbar-arrow-color: #000;
+	scrollbar-base-color: #fff;
+	scrollbar-track-color: #fff;
+	scrollbar-face-color: buttonface;
+	scrollbar-highlight-color: #fff;
+	scrollbar-3dlight-color: #000;
+	scrollbar-darkshadow-color: #fff;
+	scrollbar-shadow-color: #000;
+}
+.tbToolbar
+{
+    POSITION: ABSOLUTE;
+    BORDER-BOTTOM: black solid 1px; 
+    BORDER-LEFT: black solid 1px; 
+    BORDER-RIGHT: black solid 1px; 
+    BORDER-TOP:  black solid 1px; 
+    left:50;
+    top:100;
+}
+.tbButton
+{
+    BACKGROUND-COLOR: buttonface; 
+    POSITION: relative;
+    TOP: 0px;
+    HEIGHT: 24px; 
+    WIDTH: 25px;
+    cursor:hand;
+}
+.selectClass
+{
+    BACKGROUND-COLOR: buttonface; 
+    cursor:hand;
+}
+.tbIcon
+{
+    POSITION: ABSOLUTE;
+	TOP: 1
+}
+.tbSeparator
+{
+	BACKGROUND-COLOR: black; 
+}
+.tbMenu
+{
+    POSITION: ABSOLUTE;
+    CURSOR: default;
+    BACKGROUND-COLOR: buttonface; 
+  	BORDER-BOTTOM: buttonface solid 1px; 
+    BORDER-LEFT: buttonface solid 1px; 
+    BORDER-RIGHT: buttonface solid 1px; 
+    BORDER-TOP:  buttonface solid 1px; 
+    PADDING-TOP: 4;
+    PADDING-BOTTOM: 2;
+    TOP: 1px;
+	WIDTH: 1px; 
+    FONT-FAMILY: MS Sans Serif; 
+    FONT-SIZE: 8px;
+}
+.tbMenuItem
+{
+    CURSOR: default;
+    FONT-FAMILY: MS Sans Serif; 
+    FONT-SIZE: 8px;
+    DISPLAY: none;    
+}
+.tbSubmenu 
+{
+    CURSOR: default;
+    FONT-FAMILY: MS Sans Serif; 
+    FONT-SIZE: 8px;    
+    DISPLAY: none;    
+} 
