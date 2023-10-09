@@ -390,10 +390,6 @@
     <Compile Include="menu.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="modules\debate\debate.aspx.cs">
-      <DependentUpon>debate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="modules\default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -416,10 +412,6 @@
     </Compile>
     <Compile Include="modules\mailform\mailform.aspx.cs">
       <DependentUpon>mailform.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="modules\printerfriendly\default.aspx.cs">
-      <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="modules\redirect\default.aspx.cs">
@@ -775,22 +767,8 @@
     </Content>
     <Content Include="images\default.css" />
     <Content Include="images\space.gif" />
-    <Content Include="modules\address\add_address.xsl" />
-    <Content Include="modules\address\do_list_address.xsl" />
-    <Content Include="modules\address\form_edit_address.xsl" />
-    <Content Include="modules\address\list_address.xsl" />
-    <Content Include="modules\booking\form_show_booking.xsl" />
-    <Content Include="modules\booking\images\tri.gif" />
-    <Content Include="modules\booking\images\trileft.gif" />
-    <Content Include="modules\calendar\show_calendar.xsl" />
     <Content Include="modules\comments\comments.xsl" />
-    <Content Include="modules\debate\debate.aspx" />
-    <Content Include="modules\debate\form_add_debate.xsl" />
-    <Content Include="modules\debate\images\email.gif" />
-    <Content Include="modules\debate\images\minus.gif" />
-    <Content Include="modules\debate\images\plus.gif" />
-    <Content Include="modules\debate\images\tom.gif" />
-    <Content Include="modules\debate\show_debate_tree.xsl" />
+    <Content Include="modules\Controls\test.ascx" />
     <Content Include="modules\default.aspx">
       <SubType>Form</SubType>
     </Content>
@@ -816,25 +794,9 @@
       <SubType>Form</SubType>
     </Content>
     <Content Include="modules\newsletter\list_newsletter.xsl" />
-    <Content Include="modules\printerfriendly\default.aspx" />
-    <Content Include="modules\printerfriendly\printerfriendly.xsl" />
     <Content Include="modules\redirect\default.aspx">
       <SubType>Form</SubType>
     </Content>
-    <Content Include="modules\search\form_search.xsl" />
-    <Content Include="modules\search\search_result.xsl" />
-    <Content Include="modules\shop\checkout.xsl" />
-    <Content Include="modules\shop\default.aspx" />
-    <Content Include="modules\shop\do_order.xsl" />
-    <Content Include="modules\shop\email_confirm.xsl" />
-    <Content Include="modules\shop\error.xsl" />
-    <Content Include="modules\shop\form_accept.xsl" />
-    <Content Include="modules\shop\form_checkout.xsl" />
-    <Content Include="modules\shop\form_payment.xsl" />
-    <Content Include="modules\shop\form_savecustomer.xsl" />
-    <Content Include="modules\shop\list_basket.xsl" />
-    <Content Include="modules\shop\list_category.xsl" />
-    <Content Include="modules\shop\list_search.xsl" />
     <Content Include="modules\utils\captchaimage.aspx" />
     <Content Include="modules\utils\watermark.aspx">
       <SubType>Form</SubType>
@@ -1030,10 +992,6 @@
       <DependentUpon>Global.asax.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="modules\debate\debate.aspx.resx">
-      <DependentUpon>debate.aspx.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="modules\default.aspx.resx">
       <DependentUpon>default.aspx.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -1056,10 +1014,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modules\mailform\mailform.aspx.resx">
       <DependentUpon>mailform.aspx.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="modules\printerfriendly\default.aspx.resx">
-      <DependentUpon>default.aspx.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="modules\redirect\default.aspx.resx">
